@@ -1,2 +1,2 @@
 # Magical-air-ride-adwenture
-Creating new project 
+Creating new project web-site
