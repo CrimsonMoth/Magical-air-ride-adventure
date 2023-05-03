@@ -26,6 +26,7 @@ body {
 
 .container {
   background-color: #ebffff;
+  position: relative;
 }
 
 .header {
@@ -42,13 +43,30 @@ body {
   height: 170px;
   width: 150px;
 }
+.header__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
 
+.title-first {
+  color: #fff;
+}
 .title-first__main {
-  font-weight: 60000;
+  display: block;
+  font-weight: 600;
   font-size: 50px;
   line-height: 60px;
   letter-spacing: 5px;
-  color: #fff;
   text-transform: uppercase;
+}
+.title-first__secondary {
+  display: block;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
 }
 /*# sourceMappingURL=styles.css.map */
