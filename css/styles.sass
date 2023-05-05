@@ -55,11 +55,39 @@ body
     font-size: 50px
     line-height: 60px
     letter-spacing: 5px 
-    text-transform: uppercase   
+    text-transform: uppercase 
+    animation-name: Emersion
+    animation-duration: 3s 
+    animation-delay: 2s
+    animation-timing-function: ease 
   &__secondary
     display: block
     font-weight: 300
     font-size: 40px
     line-height: 48px
-    // letter-spacing: 5px
+    animation-name: Slide
+    animation-duration: 2.5s 
+    animation-delay: 2s
+    animation-timing-function: ease 
+
+@keyframes Emersion
+  0%
+    opacity: 0
+    
+  100%
+    opacity: 1
+
+@keyframes Slide
+  0%
+    opacity: 0
+    transform: translateX(-100px)
+
+  80%
+    transform: translateX(30px)
+
+  100%
+    opacity: 1
+    transform: translateX(0px)
+      
+    
 
