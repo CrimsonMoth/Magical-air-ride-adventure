@@ -74,22 +74,38 @@ body
     margin-bottom: 50px
 
 .btn
+  width: 170px
+  height: 40px
+  border: 1px solid yellow
   &:link, &:visited
     text-transform: uppercase
     text-decoration: none
     color: white
-    padding: 15px 40px
+    padding: 10px 10px
     background: blue
     border-radius: 10px
     display: inline-block
     transition: all 0.3s
+  &_animated
+    animation: BtnToUp .5s ease-out .7s
+    animation-fill-mode: backwards
+
+    
   &:hover
     transform: translateY(-4px)
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.5))
   &:active
     transform: translateY(-3px)
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.3))
-    
+
+
+@keyframes BtnToUp
+  0%
+    opacity: 0
+    transform: translateY(50px)
+  100%
+    opacity: 1
+    transform: translateY(0px)
 
 @keyframes Emersion
   0%
