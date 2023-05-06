@@ -1,4 +1,4 @@
-* {
+*, ::after, ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,11 +16,15 @@
   font-weight: bold;
   font-style: normal;
 }
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Raleway";
   font-weight: regular;
-  letter-spacing: 2px;
-  padding: 50px;
+  letter-spacing: 0.2rem;
+  padding: 5rem;
   background-color: white;
 }
 
@@ -38,10 +42,10 @@ body {
 }
 .header__logo {
   position: absolute;
-  left: 15px;
-  top: 20px;
-  height: 170px;
-  width: 150px;
+  left: 1.5rem;
+  top: 2rem;
+  height: 17rem;
+  width: 15rem;
 }
 .header__box {
   position: absolute;
@@ -58,16 +62,18 @@ body {
 .title-first__main {
   display: block;
   font-weight: 600;
-  font-size: 50px;
-  line-height: 60px;
-  letter-spacing: 5px;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: 0.5rem;
   text-transform: uppercase;
   -webkit-animation-name: Emersion;
           animation-name: Emersion;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-backface-visibility: hidden;
@@ -76,74 +82,76 @@ body {
 .title-first__secondary {
   display: block;
   font-weight: 300;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 4rem;
+  line-height: 4.8rem;
   -webkit-animation-name: Slide;
           animation-name: Slide;
   -webkit-animation-duration: 2.5s;
           animation-duration: 2.5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .btn {
-  width: 170px;
-  height: 40px;
-  border: 1px solid yellow;
+  width: 17rem;
+  height: 4rem;
+  border: 0.1rem solid yellow;
 }
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  padding: 10px 10px;
+  padding: 1rem 1rem;
   background: blue;
-  border-radius: 10px;
+  border-radius: 1rem;
   display: inline-block;
   transition: all 0.3s;
+  position: relative;
+  font-size: 1.5rem;
 }
 .btn_animated {
   -webkit-animation: BtnToUp 0.5s ease-out 0.7s;
           animation: BtnToUp 0.5s ease-out 0.7s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 .btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(-0.4rem);
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
 }
 .btn:active {
-  transform: translateY(-3px);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  transform: translateY(-0.3rem);
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 
 @-webkit-keyframes BtnToUp {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(5rem);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0rem);
   }
 }
 
 @keyframes BtnToUp {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(5rem);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0rem);
   }
 }
 @-webkit-keyframes Emersion {
@@ -165,27 +173,27 @@ body {
 @-webkit-keyframes Slide {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80% {
-    transform: translateX(30px);
+    transform: translateX(3rem);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0rem);
   }
 }
 @keyframes Slide {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80% {
-    transform: translateX(30px);
+    transform: translateX(3rem);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0rem);
   }
 }
 /*# sourceMappingURL=styles.css.map */

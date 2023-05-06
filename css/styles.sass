@@ -1,4 +1,4 @@
-*
+*, ::after, ::before
   margin: 0
   padding: 0
   box-sizing: border-box
@@ -15,11 +15,15 @@
   font-weight: bold
   font-style: normal
 
+html
+  font-size: 62.5%
+  // 1rem = 10px (10/16*100=62.5%)
+
 body
   font-family: "Raleway"
   font-weight: regular
-  letter-spacing: 2px
-  padding: 50px
+  letter-spacing: .2rem
+  padding: 5rem
   background-color: white
 
 .container
@@ -33,10 +37,10 @@ body
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%)
   &__logo
     position: absolute
-    left: 15px
-    top: 20px
-    height: 170px
-    width: 150px
+    left: 1.5rem
+    top: 2rem
+    height: 17rem
+    width: 15rem
   &__box
     position: absolute
     top: 50%
@@ -52,62 +56,65 @@ body
   &__main
     display: block
     font-weight: 600
-    font-size: 50px
-    line-height: 60px
-    letter-spacing: 5px 
+    font-size: 5rem
+    line-height: 6rem
+    letter-spacing: .5rem 
     text-transform: uppercase 
     animation-name: Emersion
     animation-duration: 3s 
-    animation-delay: 2s
+    animation-fill-mode: backwards
+    animation-delay: 1s
     animation-timing-function: ease 
     backface-visibility: hidden
   &__secondary
     display: block
     font-weight: 300
-    font-size: 40px
-    line-height: 48px
+    font-size: 4rem
+    line-height: 4.8rem
     animation-name: Slide
     animation-duration: 2.5s 
     animation-fill-mode: backwards
-    animation-delay: 4s
+    animation-delay: 2s
     animation-timing-function: ease-in
     backface-visibility: hidden
-    margin-bottom: 50px
+    margin-bottom: 5rem
 
 .btn
-  width: 170px
-  height: 40px
-  border: 1px solid yellow
+  width: 17rem
+  height: 4rem
+  border: .1rem solid yellow
   &:link, &:visited
     text-transform: uppercase
     text-decoration: none
     color: white
-    padding: 10px 10px
+    padding: 1rem 1rem
     background: blue
-    border-radius: 10px
+    border-radius: 1rem
     display: inline-block
     transition: all 0.3s
+    position: relative
+    font-size: 1.5rem
   &_animated
     animation: BtnToUp .5s ease-out .7s
     animation-fill-mode: backwards
-    animation-delay: 7s
+    animation-delay: 5s
 
     
   &:hover
-    transform: translateY(-4px)
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.5))
+    transform: translateY(-.4rem)
+    box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, 0.5))
   &:active
-    transform: translateY(-3px)
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.3))
+    transform: translateY(-.3rem)
+    box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, 0.3))
 
 
 @keyframes BtnToUp
   0%
     opacity: 0
-    transform: translateY(50px)
+    transform: translateY(5rem)
   100%
     opacity: 1
-    transform: translateY(0px)
+    transform: translateY(0rem)
 
 @keyframes Emersion
   0%
@@ -119,14 +126,14 @@ body
 @keyframes Slide
   0%
     opacity: 0
-    transform: translateX(-100px)
+    transform: translateX(-10rem)
 
   80%
-    transform: translateX(30px)
+    transform: translateX(3rem)
 
   100%
     opacity: 1
-    transform: translateX(0px)
+    transform: translateX(0rem)
       
     
 
