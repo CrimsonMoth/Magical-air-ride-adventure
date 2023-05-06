@@ -82,8 +82,10 @@ body {
           animation-name: Slide;
   -webkit-animation-duration: 2.5s;
           animation-duration: 2.5s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   -webkit-backface-visibility: hidden;
@@ -111,6 +113,8 @@ body {
           animation: BtnToUp 0.5s ease-out 0.7s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 .btn:hover {
   transform: translateY(-4px);
