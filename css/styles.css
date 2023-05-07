@@ -105,13 +105,13 @@ body {
   border: 0.1rem solid #ffff00;
 }
 .btn:link, .btn:visited {
+  display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
   padding: 1rem 1rem;
   background: #0000ff;
   border-radius: 1rem;
-  display: inline-block;
   transition: all 0.3s;
   position: relative;
   font-size: 1.5rem;
@@ -140,7 +140,7 @@ body {
   }
   100% {
     opacity: 1;
-    transform: translateY(0rem);
+    transform: translateY(0);
   }
 }
 
@@ -151,7 +151,7 @@ body {
   }
   100% {
     opacity: 1;
-    transform: translateY(0rem);
+    transform: translateY(0);
   }
 }
 @-webkit-keyframes Emersion {
@@ -180,7 +180,7 @@ body {
   }
   100% {
     opacity: 1;
-    transform: translateX(0rem);
+    transform: translateX(0);
   }
 }
 @keyframes Slide {
@@ -193,7 +193,7 @@ body {
   }
   100% {
     opacity: 1;
-    transform: translateX(0rem);
+    transform: translateX(0);
   }
 }
 /*# sourceMappingURL=styles.css.map */
