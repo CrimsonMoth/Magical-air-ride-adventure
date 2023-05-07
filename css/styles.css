@@ -25,11 +25,11 @@ body {
   font-weight: regular;
   letter-spacing: 0.2rem;
   padding: 5rem;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .container {
-  background-color: #ebffff;
+  background-color: #d7f5f5;
   position: relative;
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .title-first {
-  color: #fff;
+  color: #ffffff;
 }
 .title-first__main {
   display: block;
@@ -86,8 +86,8 @@ body {
   line-height: 4.8rem;
   -webkit-animation-name: Slide;
           animation-name: Slide;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   -webkit-animation-delay: 2s;
@@ -102,14 +102,14 @@ body {
 .btn {
   width: 17rem;
   height: 4rem;
-  border: 0.1rem solid yellow;
+  border: 0.1rem solid #ffff00;
 }
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   padding: 1rem 1rem;
-  background: blue;
+  background: #0000ff;
   border-radius: 1rem;
   display: inline-block;
   transition: all 0.3s;
@@ -126,7 +126,7 @@ body {
 }
 .btn:hover {
   transform: translateY(-0.4rem);
-  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 .btn:active {
   transform: translateY(-0.3rem);

@@ -1,3 +1,10 @@
+$color-blue: #0000ff
+$color-white: #ffffff
+$color-yellow: #ffff00
+$color-grey: #d7f5f5
+
+$btn-box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, 0.3))
+  
 *, ::after, ::before
   margin: 0
   padding: 0
@@ -24,10 +31,10 @@ body
   font-weight: regular
   letter-spacing: .2rem
   padding: 5rem
-  background-color: white
+  background-color: $color-white
 
 .container
-  background-color: #ebffff
+  background-color: $color-grey
   position: relative
 
 .header
@@ -50,7 +57,7 @@ body
     text-align: center
 
 .title-first
-  color: #fff
+  color: $color-white
   
   
   &__main
@@ -72,7 +79,7 @@ body
     font-size: 4rem
     line-height: 4.8rem
     animation-name: Slide
-    animation-duration: 2.5s 
+    animation-duration: 3s 
     animation-fill-mode: backwards
     animation-delay: 2s
     animation-timing-function: ease-in
@@ -82,13 +89,13 @@ body
 .btn
   width: 17rem
   height: 4rem
-  border: .1rem solid yellow
+  border: .1rem solid $color-yellow
   &:link, &:visited
     text-transform: uppercase
     text-decoration: none
-    color: white
+    color: $color-white
     padding: 1rem 1rem
-    background: blue
+    background: $color-blue
     border-radius: 1rem
     display: inline-block
     transition: all 0.3s
@@ -102,10 +109,10 @@ body
     
   &:hover
     transform: translateY(-.4rem)
-    box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, 0.5))
+    box-shadow: $btn-box-shadow
   &:active
     transform: translateY(-.3rem)
-    box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, 0.3))
+    box-shadow: $btn-box-shadow
 
 
 @keyframes BtnToUp
