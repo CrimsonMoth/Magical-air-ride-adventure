@@ -3,113 +3,20 @@
 @import "abstracts/_functions.sass"
 
 @import "base/_animations.sass"
-  
+@import "base/_base.sass"
+@import "base/_typographics.sass"
+@import "base/_utilities.sass"
 
-*, ::after, ::before
-  margin: 0
-  padding: 0
-  box-sizing: border-box
+@import "components/_button.sass"
 
-@font-face 
-  font-family: "Raleway"
-  src: url('../fonts/Raleway-Regular.ttf')
-  font-weight: regular
-  font-style: normal
+@import "pages/_home.sass"
+@import "layout/_header.sass"
 
-@font-face 
-  font-family: "Raleway"
-  src: url('../fonts/Raleway-SemiBold.ttf')
-  font-weight: bold
-  font-style: normal
 
-html
-  font-size: 62.5%
-  // 1rem = 10px (10/16*100=62.5%)
 
-body
-  font-family: "Raleway"
-  font-weight: regular
-  letter-spacing: .2rem
-  padding: 5rem
-  background-color: $color-white
 
-.container
-  background-color: $color-grey
-  position: relative
 
-.header
-  position: relative
-  height: 95vh
-  background: url(../img/YAXq-j0WcsA4.jpg) center / cover no-repeat
-  clip-path: $shape-clip-path
-  &__logo
-    position: absolute
-    left: 1.5rem
-    top: 2rem
-    height: 17rem
-    width: 15rem
-  &__box
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    width: 100%
-    text-align: center
 
-.title-first
-  color: $color-white
-  
-  
-  &__main
-    display: block
-    font-weight: 600
-    font-size: 5rem
-    line-height: 6rem
-    letter-spacing: .5rem 
-    text-transform: uppercase 
-    animation-name: Emersion
-    animation-duration: 3s 
-    animation-fill-mode: backwards
-    animation-delay: 1s
-    animation-timing-function: ease 
-    backface-visibility: hidden
-  &__secondary
-    display: block
-    font-weight: 300
-    font-size: 4rem
-    line-height: 4.8rem
-    animation-name: Slide
-    animation-duration: 3s 
-    animation-fill-mode: backwards
-    animation-delay: 2s
-    animation-timing-function: ease-in
-    backface-visibility: hidden
-    margin-bottom: 5rem
-
-.btn
-  width: 17rem
-  height: 4rem
-  border: .1rem solid $color-yellow
-  &:link, &:visited
-    @include link-style
-    padding: 1rem 1rem
-    background: $color-blue
-    border-radius: 1rem
-    transition: all 0.3s
-    position: relative
-    font-size: 1.5rem
-  &_animated
-    animation: BtnToUp .5s ease-out .7s
-    animation-fill-mode: backwards
-    animation-delay: 5s
-
-    
-  &:hover
-    transform: translateY(-.4rem)
-    box-shadow: $btn-box-shadow
-  &:active
-    transform: translateY(-.3rem)
-    box-shadow: $btn-box-shadow
 
 
     
