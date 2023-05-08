@@ -1,16 +1,8 @@
-$color-blue: #0000ff
-$color-white: #ffffff
-$color-yellow: #ffff00
-$color-grey: #d7f5f5
+@import "abstracts/_variable.sass"
+@import "abstracts/_mixins.sass"
+@import "abstracts/_functions.sass"
 
-$btn-box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, 0.3))
-$shape-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%)
-
-@mixin link-style
-  display: inline-block
-  text-transform: uppercase
-  text-decoration: none
-  color: $color-white
+@import "base/_animations.sass"
   
 
 *, ::after, ::before
@@ -120,32 +112,5 @@ body
     box-shadow: $btn-box-shadow
 
 
-@keyframes BtnToUp
-  0%
-    opacity: 0
-    transform: translateY(5rem)
-  100%
-    opacity: 1
-    transform: translateY(0)
-
-@keyframes Emersion
-  0%
-    opacity: 0
-    
-  100%
-    opacity: 1
-
-@keyframes Slide
-  0%
-    opacity: 0
-    transform: translateX(-10rem)
-
-  80%
-    transform: translateX(3rem)
-
-  100%
-    opacity: 1
-    transform: translateX(0)
-      
     
 
