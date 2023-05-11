@@ -1,0 +1,31 @@
+*, ::after, ::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+@font-face 
+  font-family: "Raleway"
+  src: url('../fonts/Raleway-Regular.ttf')
+  font-weight: regular
+  font-style: normal
+
+@font-face 
+  font-family: "Raleway"
+  src: url('../fonts/Raleway-SemiBold.ttf')
+  font-weight: bold
+  font-style: normal
+  
+html
+  font-size: 62.5%
+  // 1rem = 10px (10/16*100=62.5%)
+
+body
+  font-family: "Raleway"
+  font-weight: regular
+  letter-spacing: .2rem
+  padding: 5rem
+  background-color: $color-white
+
+.container
+  background-color: $color-grey
+  position: relative
