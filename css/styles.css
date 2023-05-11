@@ -96,29 +96,10 @@ body {
 }
 
 .title-secondary {
-  text-align: center;
-  line-height: 6rem;
-  font-size: 4rem;
+  font-size: 5rem;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
   font-weight: 600;
-  color: #00128a;
-}
-
-p {
-  display: block;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #4b4b39;
-  white-space: pre-wrap;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
-  -webkit-margin-end: 0;
-          margin-inline-end: 0;
 }
 
 .btn {
@@ -132,7 +113,7 @@ p {
   text-decoration: none;
   color: #ffffff;
   padding: 1rem 1rem;
-  background: #00128a;
+  background: #0000ff;
   border-radius: 1rem;
   transition: all 0.3s;
   position: relative;
