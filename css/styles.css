@@ -83,6 +83,7 @@ body {
 }
 .title-first__secondary {
   display: block;
+  text-align: center;
   font-weight: 300;
   font-size: 4rem;
   line-height: 4.8rem;
@@ -103,22 +104,31 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   color: #00128a;
+  margin-bottom: 2rem;
 }
 
 p {
   display: block;
   text-align: center;
-  font-size: 1.5rem;
-  color: #4b4b39;
-  white-space: pre-wrap;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
-  -webkit-margin-end: 0;
-          margin-inline-end: 0;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  color: black;
+  margin-bottom: 5rem;
+}
+
+.title-third {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.paragraph-about {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 140%;
+  font-weight: 500;
 }
 
 .btn {
