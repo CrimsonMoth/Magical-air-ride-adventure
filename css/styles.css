@@ -109,14 +109,15 @@ body {
   display: block;
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
-  color: black;
+  color: #000000;
 }
 
 .title-third {
   font-size: 2rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
+  color: #00128a;
 }
 
 .paragraph-about {
@@ -124,6 +125,7 @@ body {
   font-size: 1.6rem;
   line-height: 140%;
   font-weight: 500;
+  color: #000000;
 }
 
 .text-align-center {
