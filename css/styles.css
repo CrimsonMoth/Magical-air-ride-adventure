@@ -203,16 +203,45 @@ body {
   animation-delay: 5s;
 }
 
-.composition__photo {
-  width: 70%;
-  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+.composition {
+  position: relative;
 }
+.composition__photo {
+  width: 90%;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  position: absolute;
+  z-index: 5;
+  transition: all 0.4s;
+  outline-offset: 0.2rem;
+}
+.composition__photo_n1 {
+  top: 0;
+  left: 0rem;
+}
+.composition__photo_n2 {
+  top: 13rem;
+  right: -4rem;
+}
+.composition__photo_n3 {
+  top: 27rem;
+  left: 2rem;
+}
+.composition__photo:hover {
+  outline: 0.2rem solid #ffff00;
+  transform: scale(1.1);
+  z-index: 10;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95);
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
 }
 .row:not(:last-child) {
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 }
 .row::after {
   content: "";
@@ -275,8 +304,6 @@ body {
 }
 
 .section-about {
-  padding-top: 8rem;
-  margin-bottom: 20rem;
   padding-top: 8rem;
   margin-bottom: 20rem;
 }/*# sourceMappingURL=styles.css.map */
