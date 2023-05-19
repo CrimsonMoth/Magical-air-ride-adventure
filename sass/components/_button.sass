@@ -1,0 +1,29 @@
+.btn
+  width: 17rem
+  height: 4rem
+  text-transform: uppercase
+  border: .2rem solid $color-yellow
+  &, &:link, &:visited
+    @include link-style
+    padding: 1rem 1rem
+    background: $color-blue
+    border-radius: 1rem
+    transition: all 0.3s
+    position: relative
+    font-size: 1.5rem
+  
+  &:hover
+    transform: translateY(-.4rem)
+    box-shadow: $btn-box-shadow
+    &:active
+    transform: translateY(-.3rem)
+    box-shadow: $btn-box-shadow
+
+  &_animated
+    animation: BtnToUp .5s ease-out .7s
+    animation-fill-mode: backwards
+    animation-delay: 5s
+  
+
+
+  
