@@ -236,6 +236,29 @@ body {
   transform: scale(0.95);
 }
 
+.adventure-card {
+  padding: 4.5rem;
+  background-color: rgba(215, 245, 245, 0.8);
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  clip-path: polygon(0 1%, 100% 4%, 100% 100%, 0 97%);
+  text-align: center;
+  transition: 0.3s all;
+}
+.adventure-card:hover {
+  transform: translateY(-1.5rem) scale(1.05);
+}
+.adventure-card__icon {
+  display: inline-block;
+  font-size: 4rem;
+  color: #00128a;
+}
+
+.paragraph-adventure {
+  font-size: 1.6rem;
+  text-align: left;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
