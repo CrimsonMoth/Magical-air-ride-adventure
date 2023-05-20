@@ -284,8 +284,7 @@ body {
   position: relative;
   height: 95vh;
   background: url(../img/YAXq-j0WcsA4.jpg) center/cover no-repeat;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 }
 .header__logo {
   position: absolute;
@@ -306,4 +305,10 @@ body {
 .section-about {
   padding-top: 8rem;
   margin-bottom: 20rem;
+}
+
+.section-adventure {
+  padding: 21rem 0;
+  background: url(../img/cover-2.jpg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 }/*# sourceMappingURL=styles.css.map */
