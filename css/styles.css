@@ -259,6 +259,19 @@ body {
   text-align: left;
 }
 
+.card-tour {
+  background: #00128a;
+  height: 50rem;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  clip-path: polygon(0 1%, 100% 4%, 100% 100%, 0 97%);
+  transition: 1s all;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+}
+.card-tour:hover {
+  transform: rotateY(180deg);
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
