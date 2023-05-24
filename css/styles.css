@@ -334,4 +334,8 @@ body {
   padding: 21rem 0;
   background: url(../img/cover-2.jpg) center/cover no-repeat;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+}
+
+.section-tour {
+  padding-top: 8rem;
 }/*# sourceMappingURL=styles.css.map */
