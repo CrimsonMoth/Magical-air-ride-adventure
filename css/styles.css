@@ -238,6 +238,7 @@ body {
 
 .adventure-card {
   padding: 4.5rem;
+  margin-bottom: 4rem;
   background-color: rgba(215, 245, 245, 0.8);
   border-radius: 0.5rem;
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
@@ -260,16 +261,35 @@ body {
 }
 
 .card-tour {
-  background: #00128a;
   height: 50rem;
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   clip-path: polygon(0 1%, 100% 4%, 100% 100%, 0 97%);
-  transition: 1s all;
   perspective: 150rem;
   -moz-perspective: 150rem;
+  position: relative;
 }
-.card-tour:hover {
+.card-tour__side {
+  height: 50rem;
+  transition: 1s all ease-out;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.card-tour__side_front {
+  background: #00128a;
+}
+.card-tour__side_back {
+  background: yellow;
   transform: rotateY(180deg);
+}
+.card-tour:hover .card-tour__side_front {
+  transform: rotateY(180deg);
+}
+.card-tour:hover .card-tour__side_back {
+  transform: rotateY(0deg);
 }
 
 .row {
